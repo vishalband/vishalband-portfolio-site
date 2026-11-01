@@ -13,6 +13,7 @@
        1. CSS VARIABLES & DESIGN SYSTEM (LIGHT & DARK THEMES)
        ========================================================================== */
     :root {
+      color-scheme: light;
       --font-main: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       
       /* Light Theme (default) */
@@ -46,8 +47,9 @@
       --btn-secondary-border: rgba(0, 0, 0, 0.15);
       --btn-secondary-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
       --accent-purple: #7c3aed;
-      --accent-blue: #0284c7;
+      --accent-blue: #0369a1;
       --accent-emerald: #10b981;
+      --success-text: #15803d;
 
       /* Hanging Badge Card */
       --card-bg: #ffffff;
@@ -79,6 +81,7 @@
     }
 
     [data-theme="dark"] {
+      color-scheme: dark;
       /* Dark Theme */
       --bg-body: #050508;
       --bg-surface: #0c0c12;
@@ -112,6 +115,7 @@
       --accent-purple: #a855f7;
       --accent-blue: #38bdf8;
       --accent-emerald: #34d399;
+      --success-text: #34d399;
 
       /* Hanging Badge Card */
       --card-bg: #0c0c0e;
@@ -167,6 +171,11 @@
       transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
       cursor: none;
       position: relative;
+    }
+
+    @media (pointer: coarse) {
+      body, body a, body button { cursor: auto; }
+      .custom-cursor, .cursor-trail-dot { display: none !important; }
     }
 
     a, button {
@@ -300,7 +309,7 @@
     .nav-brand-sub {
       font-size: 10px;
       font-weight: 600;
-      color: #888891;
+      color: var(--text-muted);
       letter-spacing: 0.12em;
       text-transform: uppercase;
       margin-top: 1px;
@@ -846,7 +855,7 @@
     .card-info-label {
       font-size: 8.5px;
       font-weight: 700;
-      color: #888891;
+      color: var(--text-muted);
       letter-spacing: 0.09em;
       text-transform: uppercase;
       margin-bottom: 2px;
@@ -863,7 +872,7 @@
     }
 
     .status-active-text {
-      color: #16c060 !important;
+      color: var(--success-text) !important;
       display: inline-flex;
       align-items: center;
       gap: 4px;
@@ -916,7 +925,7 @@
     .card-brand-tag {
       font-size: 9px;
       font-weight: 700;
-      color: #888891;
+      color: var(--text-muted);
       letter-spacing: 0.08em;
       text-transform: uppercase;
     }
@@ -932,6 +941,8 @@
       position: relative;
       z-index: 10;
     }
+
+    .section-container[id] { scroll-margin-top: 112px; }
 
     .section-header {
       margin-bottom: 50px;
@@ -1290,7 +1301,7 @@
 
     .edu-score-pill {
       background: rgba(34, 197, 94, 0.12);
-      color: #16a34a;
+      color: var(--success-text);
       padding: 3px 12px;
       border-radius: 999px;
       font-size: 13px;
@@ -1874,23 +1885,53 @@
        15. RESPONSIVE BREAKPOINTS (< 900px)
        ========================================================================== */
     @media (max-width: 900px) {
+      .navbar-wrapper {
+        top: 8px;
+        padding: 0 12px;
+      }
+
       .navbar {
-        height: 58px;
-        padding: 0 16px;
+        height: auto;
+        min-height: 58px;
+        flex-wrap: wrap;
+        gap: 4px 12px;
+        padding: 8px 14px 6px;
+        border-radius: 20px;
       }
 
       .nav-links {
-        display: none;
+        order: 3;
+        flex: 0 0 100%;
+        width: 100%;
+        gap: 4px;
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        scrollbar-width: none;
+        padding: 2px 0 4px;
+        touch-action: pan-x;
+      }
+
+      .nav-links::-webkit-scrollbar { display: none; }
+      .nav-links li { flex: 0 0 auto; }
+
+      .nav-link {
+        display: inline-flex;
+        align-items: center;
+        min-height: 40px;
+        padding: 6px 10px;
+        font-size: 13px;
+        white-space: nowrap;
       }
 
       .hero-section {
-        padding: 90px 24px 50px 24px;
-        min-height: auto;
+        min-height: 100svh;
+        padding: 150px 24px 52px;
       }
 
       .hero-container {
         grid-template-columns: 1fr;
-        gap: 50px;
+        gap: 36px;
+        min-width: 0;
       }
 
       .hero-content {
@@ -1908,9 +1949,12 @@
       }
 
       .hero-badge-column {
-        height: 520px;
-        min-height: 520px;
+        height: 590px;
+        min-height: 590px;
       }
+
+      .hero-title-greeting { font-size: clamp(40px, 8vw, 60px); }
+      .hero-title-name { font-size: clamp(38px, 10vw, 68px); }
 
       .about-grid, .contact-grid {
         grid-template-columns: 1fr;
@@ -1920,6 +1964,66 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
       }
+
+      .section-container { padding: 84px 24px; }
+      .education-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+      .projects-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); }
+      .additional-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr)); }
+      .badge-card { width: min(316px, calc(100vw - 40px)); }
+      .contact-val, .hero-contact-badge { min-width: 0; overflow-wrap: anywhere; }
+    }
+
+    @media (max-width: 600px) {
+      .navbar-wrapper { padding: 0 10px; }
+      .navbar { padding: 8px 10px 5px; gap: 2px 8px; }
+      .nav-logo-group { min-width: 0; gap: 9px; }
+      .nav-brand-name { font-size: 14px; }
+      .nav-brand-sub { font-size: 8px; letter-spacing: 0.09em; }
+      .nav-logo-badge { width: 34px; height: 34px; }
+      .theme-toggle-btn { width: 38px; height: 38px; flex: 0 0 38px; }
+      .nav-link { font-size: 12px; padding-inline: 9px; }
+
+      .hero-section { padding: 142px 18px 40px; }
+      .hero-content { width: 100%; }
+      .hero-title { max-width: 100%; }
+      .hero-title-greeting { font-size: clamp(36px, 10vw, 48px); }
+      .hero-title-name { font-size: clamp(34px, 10.5vw, 52px); overflow-wrap: anywhere; }
+      .hero-subtitle { font-size: 16px; }
+      .hero-actions { width: 100%; gap: 10px; }
+      .hero-actions .btn { flex: 1 1 145px; padding: 0 16px; }
+      .hero-socials { width: 100%; gap: 8px; }
+      .hero-contact-badge { max-width: 100%; font-size: 12px; padding: 7px 10px; }
+      .hero-badge-column { height: 570px; min-height: 570px; }
+      .section-container[id] { scroll-margin-top: 104px; }
+
+      .section-container { padding: 68px 18px; }
+      .section-header { margin-bottom: 32px; }
+      .section-title { font-size: clamp(30px, 8vw, 40px); }
+      .section-desc { font-size: 16px; }
+      .about-grid, .skills-category-group, .education-grid, .projects-grid, .contact-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .stats-row { gap: 12px; }
+      .bento-card, .skills-block, .milestones-block, .edu-card, .career-card,
+      .project-body, .contact-info-card, .contact-form-card { padding: 20px; }
+      .timeline-container { padding-left: 20px; margin-left: 8px; }
+      .timeline-dot { left: -29px; }
+      .career-role { font-size: 20px; }
+      .edu-footer { flex-wrap: wrap; gap: 8px; }
+      .project-preview { padding: 16px; }
+      .project-preview-mockup { padding: 12px; }
+      .contact-item { gap: 12px; }
+      .contact-icon-box { width: 40px; height: 40px; flex: 0 0 40px; }
+    }
+
+    @media (max-width: 360px) {
+      .hero-section { padding-inline: 14px; }
+      .hero-title-greeting { font-size: 34px; }
+      .hero-title-name { font-size: 32px; }
+      .section-container { padding-inline: 14px; }
+      .stats-row { grid-template-columns: 1fr 1fr; }
+      .bento-card, .skills-block, .milestones-block, .edu-card, .career-card,
+      .project-body, .contact-info-card, .contact-form-card { padding: 16px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
