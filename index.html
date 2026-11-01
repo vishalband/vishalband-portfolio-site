@@ -1,0 +1,3028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishal Band — PGDM (2026-28) | Operations &amp; Agentic AI Specialist</title>
+  <meta name="description" content="Portfolio of Vishal Band — PGDM candidate (2026-28) at WeSchool, Mumbai with 2.5+ years experience in EHV SCADA Operations, Community Growth, and Process Automation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* ==========================================================================
+       1. CSS VARIABLES & DESIGN SYSTEM (LIGHT & DARK THEMES)
+       ========================================================================== */
+    :root {
+      --font-main: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      
+      /* Light Theme (default) */
+      --bg-body: #ffffff;
+      --bg-surface: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-card-subtle: #f1f5f9;
+      --text-main: #0a0a0c;
+      --text-muted: #4b5563;
+      --text-sub: #64748b;
+      --border-subtle: rgba(0, 0, 0, 0.08);
+      --border-card: rgba(0, 0, 0, 0.08);
+      
+      /* Nav */
+      --nav-bg: rgba(255, 255, 255, 0.88);
+      --nav-border: rgba(0, 0, 0, 0.08);
+      --nav-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.06), 0 4px 12px -2px rgba(0, 0, 0, 0.03);
+      --nav-active-pill: rgba(0, 0, 0, 0.07);
+      
+      /* Toggle button */
+      --toggle-bg: #eef2ff;
+      --toggle-color: #4f46e5;
+      --toggle-hover: #e0e7ff;
+
+      /* Buttons & Accents */
+      --btn-primary-bg: #0a0a0c;
+      --btn-primary-text: #ffffff;
+      --btn-primary-shadow: 0 10px 25px -4px rgba(79, 70, 229, 0.35);
+      --btn-secondary-bg: #ffffff;
+      --btn-secondary-text: #0a0a0c;
+      --btn-secondary-border: rgba(0, 0, 0, 0.15);
+      --btn-secondary-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+      --accent-purple: #7c3aed;
+      --accent-blue: #0284c7;
+      --accent-emerald: #10b981;
+
+      /* Hanging Badge Card */
+      --card-bg: #ffffff;
+      --card-border-badge: rgba(0, 0, 0, 0.08);
+      --card-shadow: 0 35px 70px -15px rgba(0, 0, 0, 0.16), 0 15px 30px -10px rgba(0, 0, 0, 0.08);
+      --card-shadow-drag: 0 45px 90px -10px rgba(0, 0, 0, 0.28), 0 25px 40px -10px rgba(124, 58, 237, 0.2);
+      --card-header-gradient: linear-gradient(135deg, #7a00e6 0%, #d8b4fe 48%, #ffffff 52%, #0284c7 100%);
+      --card-divider: rgba(0, 0, 0, 0.08);
+      --card-grid-bg: #f8fafc;
+      --card-grid-border: rgba(0, 0, 0, 0.07);
+      --card-barcode-bg: #f1f5f9;
+      --card-barcode-bar: #000000;
+      --card-slot-bg: #111115;
+      
+      /* Cursor */
+      --cursor-color: #000000;
+      --cursor-trail: rgba(0, 0, 0, 0.25);
+      
+      /* Hero Accent Gradient */
+      --hero-gradient: linear-gradient(90deg, #7c3aed, #0ea5e9, #4f46e5, #7c3aed);
+      --hero-vignette: transparent;
+      --top-glow: transparent;
+      --bg-grid: transparent;
+      
+      /* Form */
+      --input-bg: #ffffff;
+      --input-border: rgba(0, 0, 0, 0.14);
+      --input-focus: #4f46e5;
+    }
+
+    [data-theme="dark"] {
+      /* Dark Theme */
+      --bg-body: #050508;
+      --bg-surface: #0c0c12;
+      --bg-card: #101017;
+      --bg-card-subtle: #171722;
+      --text-main: #ffffff;
+      --text-muted: #9ca3af;
+      --text-sub: #94a3b8;
+      --border-subtle: rgba(255, 255, 255, 0.09);
+      --border-card: rgba(255, 255, 255, 0.1);
+      
+      /* Nav */
+      --nav-bg: rgba(15, 15, 22, 0.8);
+      --nav-border: rgba(255, 255, 255, 0.08);
+      --nav-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.04);
+      --nav-active-pill: rgba(255, 255, 255, 0.12);
+
+      /* Toggle button */
+      --toggle-bg: rgba(251, 191, 36, 0.12);
+      --toggle-color: #fbbf24;
+      --toggle-hover: rgba(251, 191, 36, 0.2);
+
+      /* Buttons & Accents */
+      --btn-primary-bg: #ffffff;
+      --btn-primary-text: #000000;
+      --btn-primary-shadow: 0 10px 25px -4px rgba(255, 255, 255, 0.2);
+      --btn-secondary-bg: rgba(255, 255, 255, 0.05);
+      --btn-secondary-text: #ffffff;
+      --btn-secondary-border: rgba(255, 255, 255, 0.16);
+      --btn-secondary-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+      --accent-purple: #a855f7;
+      --accent-blue: #38bdf8;
+      --accent-emerald: #34d399;
+
+      /* Hanging Badge Card */
+      --card-bg: #0c0c0e;
+      --card-border-badge: rgba(255, 255, 255, 0.1);
+      --card-shadow: 0 35px 70px -15px rgba(0, 0, 0, 0.8), 0 0 30px rgba(124, 58, 237, 0.15);
+      --card-shadow-drag: 0 45px 95px -5px rgba(0, 0, 0, 0.95), 0 0 50px rgba(37, 99, 255, 0.3);
+      --card-header-gradient: linear-gradient(135deg, #3b0764 0%, #1e1136 60%, #0c0c0e 100%);
+      --card-divider: rgba(255, 255, 255, 0.09);
+      --card-grid-bg: rgba(255, 255, 255, 0.03);
+      --card-grid-border: rgba(255, 255, 255, 0.07);
+      --card-barcode-bg: rgba(255, 255, 255, 0.04);
+      --card-barcode-bar: #ffffff;
+      --card-slot-bg: #050507;
+
+      /* Cursor */
+      --cursor-color: #ffffff;
+      --cursor-trail: rgba(255, 255, 255, 0.3);
+
+      /* Hero Accent Gradient */
+      --hero-gradient: linear-gradient(90deg, #2563ff, #00e5ff, #34f5a0, #e8ff4d, #fff7d6, #2563ff);
+      --hero-vignette: radial-gradient(circle at 25% 45%, rgba(45, 15, 80, 0.28) 0%, rgba(0, 0, 0, 0) 70%);
+      --top-glow: linear-gradient(180deg, rgba(88, 28, 135, 0.35) 0%, rgba(88, 28, 135, 0) 100%);
+      --bg-grid: radial-gradient(circle, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+      
+      /* Form */
+      --input-bg: rgba(255, 255, 255, 0.04);
+      --input-border: rgba(255, 255, 255, 0.12);
+      --input-focus: #818cf8;
+    }
+
+    /* ==========================================================================
+       2. RESET & GLOBAL BASE
+       ========================================================================== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      width: 100%;
+      min-height: 100vh;
+      font-family: var(--font-main);
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+      cursor: none;
+      position: relative;
+    }
+
+    a, button {
+      cursor: none;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button {
+      background: none;
+      border: none;
+      font-family: inherit;
+    }
+
+    a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+      outline: 2px solid #6366f1;
+      outline-offset: 4px;
+      border-radius: 8px;
+    }
+
+    .top-glow-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 28px;
+      background: var(--top-glow);
+      pointer-events: none;
+      z-index: 90;
+      transition: background 0.4s ease;
+    }
+
+    .bg-grid-overlay {
+      position: fixed;
+      inset: 0;
+      background-image: var(--bg-grid);
+      background-size: 24px 24px;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 1;
+      transition: opacity 0.4s ease;
+    }
+
+    /* ==========================================================================
+       3. FLOATING NAVBAR
+       ========================================================================== */
+    .navbar-wrapper {
+      position: fixed;
+      top: 14px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      z-index: 100;
+      padding: 0 16px;
+    }
+
+    .navbar {
+      width: 100%;
+      max-width: 1186px;
+      height: 68px;
+      border-radius: 999px;
+      background: var(--nav-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--nav-border);
+      box-shadow: var(--nav-shadow);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px 0 16px;
+      transition: background 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+      animation: navSlideDown 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .nav-logo-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-logo-badge {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: #0f0f13;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 1px;
+      box-shadow: 0 0 12px -2px rgba(124, 58, 237, 0.35);
+    }
+
+    .nav-logo-badge::before {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      border-radius: 11px;
+      padding: 1px;
+      background: linear-gradient(135deg, #a855f7, #0284c7, #38bdf8);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+
+    .nav-logo-text {
+      font-size: 14px;
+      font-weight: 800;
+      background: linear-gradient(135deg, #c084fc, #38bdf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.01em;
+    }
+
+    .nav-brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.15;
+    }
+
+    .nav-brand-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-main);
+      letter-spacing: -0.01em;
+      transition: color 0.4s ease;
+    }
+
+    .nav-brand-sub {
+      font-size: 10px;
+      font-weight: 600;
+      color: #888891;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-top: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 14.5px;
+      font-weight: 500;
+      color: var(--text-muted);
+      transition: color 0.25s ease, background 0.25s ease;
+      position: relative;
+      padding: 6px 14px;
+      border-radius: 999px;
+    }
+
+    .nav-link:hover {
+      color: var(--text-main);
+    }
+
+    .nav-link.active {
+      color: var(--text-main);
+      background: var(--nav-active-pill);
+      font-weight: 600;
+    }
+
+    .theme-toggle-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--toggle-bg);
+      color: var(--toggle-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+      position: relative;
+      outline: none;
+    }
+
+    .theme-toggle-btn:hover {
+      background: var(--toggle-hover);
+      transform: scale(1.08);
+    }
+
+    .theme-toggle-btn:active {
+      transform: scale(0.95);
+    }
+
+    .theme-icon {
+      width: 19px;
+      height: 19px;
+      stroke-width: 1.5;
+      stroke: currentColor;
+      fill: none;
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .icon-moon { display: block; }
+    .icon-sun { display: none; }
+    [data-theme="dark"] .icon-moon { display: none; }
+    [data-theme="dark"] .icon-sun { display: block; }
+
+    /* ==========================================================================
+       4. HERO SECTION
+       ========================================================================== */
+    .hero-section {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 110px 108px 60px 108px;
+      position: relative;
+      z-index: 10;
+      overflow: hidden;
+    }
+
+    .hero-vignette {
+      position: absolute;
+      inset: 0;
+      background: var(--hero-vignette);
+      pointer-events: none;
+      z-index: 2;
+      transition: background 0.4s ease;
+    }
+
+    .hero-container {
+      width: 100%;
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-right: 24px;
+      z-index: 5;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border-subtle);
+      background: var(--nav-bg);
+      backdrop-filter: blur(8px);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 22px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+      transition: border-color 0.4s ease, color 0.4s ease;
+    }
+
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: #22c55e;
+      position: relative;
+      box-shadow: 0 0 8px rgba(34, 197, 94, 0.6);
+      animation: pulseGlow 2.5s infinite;
+    }
+
+    /* HERO HEADING */
+    .hero-title {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 22px;
+      letter-spacing: -0.02em;
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+
+    .hero-title-greeting {
+      font-size: clamp(48px, 4.3vw, 72px);
+      font-weight: 700;
+      line-height: 1.08;
+      color: var(--text-main);
+      display: block;
+      margin-bottom: 4px;
+      opacity: 1 !important;
+      visibility: visible !important;
+      transition: color 0.4s ease;
+    }
+
+    .hero-title-name {
+      font-size: clamp(54px, 4.8vw, 78px);
+      font-weight: 800;
+      line-height: 1.04;
+      display: inline-block;
+      color: #7c3aed;
+      background: var(--hero-gradient);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientShift 6s ease-in-out infinite;
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(16px, 1.2vw, 20px);
+      line-height: 1.55;
+      font-weight: 400;
+      color: var(--text-sub);
+      max-width: 530px;
+      margin-bottom: 32px;
+      transition: color 0.4s ease;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 34px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      height: 46px;
+      border-radius: 999px;
+      padding: 0 28px;
+      font-size: 15px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      position: relative;
+      transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.25s ease, background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background-color: var(--btn-primary-bg);
+      color: var(--btn-primary-text);
+      box-shadow: var(--btn-primary-shadow);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary .icon-arrow {
+      width: 17px;
+      height: 17px;
+      stroke-width: 1.5;
+      stroke: currentColor;
+      fill: none;
+      transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .btn-primary:hover .icon-arrow {
+      transform: translateX(3px);
+    }
+
+    .btn-secondary {
+      background-color: var(--btn-secondary-bg);
+      color: var(--btn-secondary-text);
+      border: 1px solid var(--btn-secondary-border);
+      box-shadow: var(--btn-secondary-shadow);
+    }
+
+    .btn-secondary:hover {
+      transform: translateY(-2px);
+      border-color: rgba(124, 58, 237, 0.3);
+    }
+
+    .btn-secondary .icon-download {
+      width: 17px;
+      height: 17px;
+      stroke-width: 1.5;
+      stroke: currentColor;
+      fill: none;
+    }
+
+    .hero-socials {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .hero-contact-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-muted);
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-subtle);
+      transition: all 0.2s ease;
+    }
+
+    .hero-contact-badge:hover {
+      color: var(--text-main);
+      border-color: var(--text-main);
+      transform: translateY(-1px);
+    }
+
+    /* ==========================================================================
+       5. HANGING ID BADGE CARD (USER PHOTO EMBEDDED)
+       ========================================================================== */
+    .hero-badge-column {
+      position: relative;
+      height: 100%;
+      min-height: 520px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      z-index: 30;
+      perspective: 1200px;
+    }
+
+    .badge-pivot-container {
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      transform-origin: 50% 0px;
+      will-change: transform;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: none;
+      cursor: grab;
+      animation: badgeDropIn 1.1s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+    }
+
+    .badge-pivot-container.dragging {
+      cursor: grabbing !important;
+    }
+
+    .lanyard-assembly {
+      width: 20px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .lanyard-cap {
+      width: 26px;
+      height: 9px;
+      background: #1e1e24;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .lanyard-strap {
+      width: 19px;
+      height: 84px;
+      background: #111115;
+      background-image: repeating-linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.05) 0px,
+        rgba(255, 255, 255, 0.05) 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        transparent 0px,
+        transparent 2px,
+        rgba(0, 0, 0, 0.4) 2px,
+        rgba(0, 0, 0, 0.4) 3px
+      );
+      box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.1), inset -1px 0 0 rgba(0, 0, 0, 0.6), 0 4px 10px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+
+    .lanyard-clip {
+      width: 16px;
+      height: 18px;
+      background: linear-gradient(135deg, #71717a 0%, #3f3f46 50%, #18181b 100%);
+      border-radius: 3px 3px 8px 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      position: relative;
+      margin-top: -1px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .lanyard-clip::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      width: 8px;
+      height: 10px;
+      border: 2px solid #52525b;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    .badge-card {
+      width: 316px;
+      height: 442px;
+      background-color: var(--card-bg);
+      border-radius: 28px;
+      border: 1px solid var(--card-border-badge);
+      box-shadow: var(--card-shadow);
+      margin-top: 5px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.3s ease;
+      will-change: transform, box-shadow;
+    }
+
+    .badge-pivot-container.dragging .badge-card {
+      box-shadow: var(--card-shadow-drag);
+    }
+
+    .card-slot-punch {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 8px;
+      background: var(--card-slot-bg);
+      border-radius: 999px;
+      z-index: 10;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.8), 0 1px 1px rgba(255, 255, 255, 0.15);
+    }
+
+    .card-header-band {
+      width: 100%;
+      height: 140px;
+      background: var(--card-header-gradient);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      transition: background 0.4s ease;
+    }
+
+    .card-header-pattern {
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(255, 255, 255, 0.22) 1px, transparent 1px);
+      background-size: 10px 10px;
+      opacity: 0.65;
+    }
+
+    .card-header-sheen {
+      position: absolute;
+      top: -60%;
+      left: -30%;
+      width: 160%;
+      height: 200%;
+      background: linear-gradient(115deg, transparent 40%, rgba(255, 255, 255, 0.25) 50%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .card-avatar-wrapper {
+      position: relative;
+      margin-top: -54px;
+      z-index: 5;
+    }
+
+    .card-avatar-ring {
+      width: 104px;
+      height: 104px;
+      border-radius: 50%;
+      padding: 3px;
+      background: linear-gradient(135deg, #0284c7 0%, #7c3aed 50%, #38bdf8 100%);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      position: relative;
+    }
+
+    .card-avatar-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      background-color: #1e1e24;
+    }
+
+    .card-avatar-online {
+      position: absolute;
+      bottom: 4px;
+      right: 4px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: #16c060;
+      border: 2px solid var(--card-bg);
+      box-shadow: 0 0 6px rgba(22, 192, 96, 0.8);
+      transition: border-color 0.4s ease;
+    }
+
+    .card-body {
+      width: 100%;
+      padding: 10px 18px 14px 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      justify-content: space-between;
+    }
+
+    .card-identity {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .card-name {
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--text-main);
+      letter-spacing: -0.01em;
+      margin-bottom: 4px;
+      transition: color 0.4s ease;
+    }
+
+    .card-role-chip {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-muted);
+      border: 1px solid var(--card-divider);
+      padding: 3px 12px;
+      border-radius: 999px;
+      letter-spacing: 0.02em;
+      margin-bottom: 8px;
+      transition: border-color 0.4s ease, color 0.4s ease;
+      text-align: center;
+    }
+
+    .card-divider-line {
+      width: 100%;
+      height: 1px;
+      background-color: var(--card-divider);
+      margin-bottom: 8px;
+      transition: background-color 0.4s ease;
+    }
+
+    .card-info-grid {
+      width: 100%;
+      background: var(--card-grid-bg);
+      border: 1px solid var(--card-grid-border);
+      border-radius: 14px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 7px 10px;
+      gap: 5px 10px;
+      margin-bottom: 8px;
+      transition: background 0.4s ease, border-color 0.4s ease;
+    }
+
+    .card-info-cell {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.15;
+    }
+
+    .card-info-label {
+      font-size: 8.5px;
+      font-weight: 700;
+      color: #888891;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    .card-info-val {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--text-main);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transition: color 0.4s ease;
+    }
+
+    .status-active-text {
+      color: #16c060 !important;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .status-active-dot {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: #16c060;
+      border-radius: 50%;
+    }
+
+    .card-barcode-box {
+      width: 100%;
+      height: 30px;
+      background: var(--card-barcode-bg);
+      border: 1px solid var(--card-grid-border);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10px;
+      margin-bottom: 7px;
+      overflow: hidden;
+      transition: background 0.4s ease, border-color 0.4s ease;
+    }
+
+    .card-barcode-svg {
+      width: 100%;
+      height: 18px;
+    }
+
+    .card-footer {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2px;
+    }
+
+    .card-serial {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      color: var(--text-main);
+      transition: color 0.4s ease;
+    }
+
+    .card-brand-tag {
+      font-size: 9px;
+      font-weight: 700;
+      color: #888891;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* ==========================================================================
+       6. GLOBAL SECTION STYLES
+       ========================================================================== */
+    .section-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 100px 24px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .section-header {
+      margin-bottom: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .section-tag {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent-purple);
+      margin-bottom: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .section-tag::before {
+      content: '//';
+      color: var(--text-muted);
+    }
+
+    .section-title {
+      font-size: clamp(32px, 3.2vw, 46px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      color: var(--text-main);
+    }
+
+    .section-desc {
+      font-size: 18px;
+      color: var(--text-sub);
+      max-width: 680px;
+      margin-top: 14px;
+      line-height: 1.6;
+    }
+
+    .bento-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 24px;
+      padding: 32px;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bento-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.1);
+      border-color: rgba(124, 58, 237, 0.3);
+    }
+
+    /* ==========================================================================
+       7. ABOUT SECTION (ALL DETAILS AS PER UPDATED PDF)
+       ========================================================================== */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 32px;
+      align-items: stretch;
+    }
+
+    .about-bio-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .about-text {
+      font-size: 18.5px;
+      line-height: 1.7;
+      color: var(--text-sub);
+      margin-bottom: 22px;
+    }
+
+    .about-text strong {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stat-number {
+      font-size: 30px;
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: -0.02em;
+    }
+
+    .stat-label {
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-top: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .about-profile-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 36px 24px;
+    }
+
+    .about-photo-frame {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      padding: 4px;
+      background: linear-gradient(135deg, #0284c7, #7c3aed, #38bdf8);
+      margin-bottom: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .about-photo-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+
+    .about-profile-name {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .about-profile-role {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--accent-purple);
+      margin-bottom: 16px;
+    }
+
+    .about-quick-details {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-subtle);
+      text-align: left;
+    }
+
+    .about-detail-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    .about-detail-row strong {
+      color: var(--text-main);
+      min-width: 74px;
+    }
+
+    /* Skills Grid */
+    .skills-block {
+      margin-top: 48px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 24px;
+      padding: 36px;
+    }
+
+    .skills-block-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 24px;
+    }
+
+    .skills-category-group {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+    }
+
+    .skill-cat h4 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent-purple);
+      margin-bottom: 14px;
+    }
+
+    .skill-tag-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill-tag {
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-subtle);
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-main);
+      transition: all 0.2s ease;
+    }
+
+    .skill-tag:hover {
+      background: var(--text-main);
+      color: var(--bg-body);
+      transform: translateY(-2px);
+    }
+
+    /* Additional Information Grid */
+    .additional-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .add-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 20px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .add-card-title {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent-purple);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .add-pill-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .add-pill {
+      font-size: 13.5px;
+      font-weight: 500;
+      color: var(--text-main);
+      padding: 6px 14px;
+      border-radius: 8px;
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-subtle);
+    }
+
+    /* ==========================================================================
+       8. ACADEMIC PROFILE (STEP 3 OF PDF)
+       ========================================================================== */
+    .education-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+
+    .edu-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 24px;
+      padding: 30px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .edu-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent-purple);
+      box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.08);
+    }
+
+    .edu-badge-tag {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-subtle);
+      color: var(--accent-purple);
+      display: inline-block;
+      margin-bottom: 14px;
+      align-self: flex-start;
+    }
+
+    .edu-degree {
+      font-size: 21px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+
+    .edu-school {
+      font-size: 15.5px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .edu-desc {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--text-sub);
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .edu-footer {
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .edu-score-pill {
+      background: rgba(34, 197, 94, 0.12);
+      color: #16a34a;
+      padding: 3px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    /* ==========================================================================
+       9. WORK EXPERIENCE (BATCHMATES & ADANI ELECTRICITY)
+       ========================================================================== */
+    .timeline-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      padding-left: 28px;
+      border-left: 2px solid var(--border-subtle);
+      margin-left: 12px;
+    }
+
+    .timeline-item {
+      position: relative;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -37px;
+      top: 24px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--bg-body);
+      border: 3px solid var(--accent-purple);
+      box-shadow: 0 0 0 4px var(--bg-body);
+      transition: all 0.3s ease;
+    }
+
+    .timeline-item:hover .timeline-dot {
+      background: var(--accent-purple);
+      transform: scale(1.2);
+    }
+
+    .career-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 24px;
+      padding: 34px;
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .career-card:hover {
+      transform: translateX(4px);
+      border-color: rgba(124, 58, 237, 0.4);
+      box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.08);
+    }
+
+    .career-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .career-role {
+      font-size: 23px;
+      font-weight: 700;
+      color: var(--text-main);
+      letter-spacing: -0.01em;
+    }
+
+    .career-company {
+      font-size: 16.5px;
+      font-weight: 600;
+      color: var(--accent-purple);
+      margin-top: 4px;
+    }
+
+    .career-period {
+      font-size: 13.5px;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 999px;
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+    }
+
+    .career-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .career-bullet-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 15px;
+      color: var(--text-sub);
+      line-height: 1.55;
+    }
+
+    .career-bullet-item::before {
+      content: '▹';
+      color: var(--accent-purple);
+      font-size: 16px;
+      line-height: 1.4;
+      flex-shrink: 0;
+      font-weight: 700;
+    }
+
+    /* Co-Curricular & Operational Milestones */
+    .milestones-block {
+      margin-top: 48px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 24px;
+      padding: 36px;
+    }
+
+    .milestones-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .milestone-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 15px;
+      color: var(--text-sub);
+      line-height: 1.55;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .milestone-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .milestone-item::before {
+      content: '⚡';
+      font-size: 15px;
+      flex-shrink: 0;
+    }
+
+    /* ==========================================================================
+       10. PROJECTS SECTION (CYBERVERSE & AUTOMATION SUITE)
+       ========================================================================== */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 32px;
+    }
+
+    .project-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 28px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+      position: relative;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 50px -15px rgba(0, 0, 0, 0.12);
+      border-color: rgba(124, 58, 237, 0.4);
+    }
+
+    .project-preview {
+      width: 100%;
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .preview-cyber {
+      background: linear-gradient(135deg, #1e1b4b 0%, #0369a1 50%, #0f172a 100%);
+    }
+
+    .preview-automation {
+      background: linear-gradient(135deg, #311042 0%, #7c3aed 50%, #1e1b4b 100%);
+    }
+
+    .preview-task {
+      background: linear-gradient(135deg, #047857 0%, #0284c7 50%, #1e1b4b 100%);
+    }
+
+    .project-preview-mockup {
+      width: 100%;
+      height: 100%;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(8px);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 8px;
+      color: #ffffff;
+    }
+
+    .mockup-icon-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    .mockup-badge {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 11px;
+    }
+
+    .project-body {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-between;
+    }
+
+    .project-category {
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent-purple);
+      margin-bottom: 8px;
+    }
+
+    .project-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 14px;
+      letter-spacing: -0.01em;
+    }
+
+    .project-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+
+    .project-bullet {
+      font-size: 14.5px;
+      line-height: 1.55;
+      color: var(--text-sub);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .project-bullet::before {
+      content: '▹';
+      color: var(--accent-purple);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: auto;
+    }
+
+    .project-tag {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       11. CONTACT SECTION
+       ========================================================================== */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .contact-info-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 28px;
+      padding: 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .contact-icon-box {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      background: var(--bg-card-subtle);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--accent-purple);
+    }
+
+    .contact-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .contact-val {
+      font-size: 15.5px;
+      font-weight: 600;
+      color: var(--text-main);
+      word-break: break-word;
+    }
+
+    .contact-val:hover {
+      color: var(--accent-purple);
+    }
+
+    .contact-form-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 28px;
+      padding: 36px;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .form-label {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .form-input, .form-textarea {
+      width: 100%;
+      background: var(--input-bg);
+      border: 1px solid var(--input-border);
+      border-radius: 12px;
+      padding: 12px 16px;
+      font-family: inherit;
+      font-size: 15px;
+      color: var(--text-main);
+      transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .form-input:focus, .form-textarea:focus {
+      border-color: var(--input-focus);
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+      outline: none;
+    }
+
+    .form-textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    .form-submit-btn {
+      height: 48px;
+      border-radius: 999px;
+      background: var(--btn-primary-bg);
+      color: var(--btn-primary-text);
+      font-size: 15px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 8px;
+      transition: all 0.25s ease;
+      box-shadow: var(--btn-primary-shadow);
+    }
+
+    .form-submit-btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .form-status {
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+      min-height: 22px;
+      color: #10b981;
+      display: none;
+    }
+
+    /* ==========================================================================
+       12. FOOTER
+       ========================================================================== */
+    .site-footer {
+      width: 100%;
+      border-top: 1px solid var(--border-subtle);
+      background: var(--bg-card);
+      padding: 50px 24px 36px 24px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .footer-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .footer-copy {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .back-to-top-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+      padding: 8px 18px;
+      border-radius: 999px;
+      border: 1px solid var(--border-subtle);
+      transition: all 0.25s ease;
+    }
+
+    .back-to-top-btn:hover {
+      color: var(--text-main);
+      border-color: var(--text-main);
+      transform: translateY(-2px);
+    }
+
+    /* ==========================================================================
+       13. CUSTOM CURSOR
+       ========================================================================== */
+    .custom-cursor {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      pointer-events: none;
+      z-index: 99999;
+      transform: translate3d(-100px, -100px, 0);
+      will-change: transform;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cursor-pointer-shape {
+      width: 20px;
+      height: 20px;
+      filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.25));
+      transition: transform 0.15s ease, opacity 0.2s ease;
+    }
+
+    .cursor-pointer-shape svg {
+      width: 100%;
+      height: 100%;
+      fill: var(--cursor-color);
+      transition: fill 0.4s ease;
+    }
+
+    .cursor-grab-shape {
+      display: none;
+      width: 22px;
+      height: 22px;
+      fill: var(--cursor-color);
+      filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3));
+    }
+
+    .custom-cursor.is-card-hover .cursor-pointer-shape { display: none; }
+    .custom-cursor.is-card-hover .cursor-grab-shape { display: block; }
+
+    .cursor-trail-dot {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--cursor-trail);
+      pointer-events: none;
+      z-index: 99998;
+      transform: translate3d(-100px, -100px, 0);
+      will-change: transform;
+      transition: opacity 0.3s ease, background-color 0.4s ease;
+    }
+
+    /* ==========================================================================
+       14. KEYFRAMES
+       ========================================================================== */
+    @keyframes navSlideDown {
+      0% { opacity: 0; transform: translateY(-24px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 6px rgba(34, 197, 94, 0.7); }
+      50% { opacity: 0.65; transform: scale(0.9); box-shadow: 0 0 2px rgba(34, 197, 94, 0.2); }
+    }
+
+    @keyframes badgeDropIn {
+      0% { opacity: 0; transform: translateX(-50%) translateY(-140px); }
+      60% { opacity: 1; transform: translateX(-50%) translateY(14px); }
+      80% { transform: translateX(-50%) translateY(-6px); }
+      100% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    }
+
+    /* ==========================================================================
+       15. RESPONSIVE BREAKPOINTS (< 900px)
+       ========================================================================== */
+    @media (max-width: 900px) {
+      .navbar {
+        height: 58px;
+        padding: 0 16px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero-section {
+        padding: 90px 24px 50px 24px;
+        min-height: auto;
+      }
+
+      .hero-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+
+      .hero-content {
+        align-items: center;
+        text-align: center;
+        padding-right: 0;
+      }
+
+      .hero-subtitle {
+        max-width: 100%;
+      }
+
+      .hero-actions, .hero-socials {
+        justify-content: center;
+      }
+
+      .hero-badge-column {
+        height: 520px;
+        min-height: 520px;
+      }
+
+      .about-grid, .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      .hero-title-name {
+        background-size: 100% auto;
+        animation: none !important;
+      }
+      .badge-pivot-container {
+        animation: none !important;
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Accent Glow & Dot Grid Overlay -->
+  <div class="top-glow-bar" aria-hidden="true"></div>
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Custom Cursor & Trail Elements -->
+  <div class="custom-cursor" id="customCursor" aria-hidden="true">
+    <div class="cursor-pointer-shape" id="cursorPointer">
+      <svg viewBox="0 0 24 24">
+        <path d="M3 3l7.5 18 2.5-7.5 7.5-2.5L3 3z" />
+      </svg>
+    </div>
+    <svg class="cursor-grab-shape" id="cursorGrab" viewBox="0 0 24 24">
+      <path d="M9 11.2V5.5a1.5 1.5 0 0 1 3 0v5.7m0-3.7V3.5a1.5 1.5 0 0 1 3 0v7.7m0-3.7V5.5a1.5 1.5 0 0 1 3 0v7.7m-9 0V7.5a1.5 1.5 0 0 0-3 0v8.2a7.3 7.3 0 0 0 7.3 7.3h1.4a7.3 7.3 0 0 0 7.3-7.3v-4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <div class="cursor-trail-dot" id="trail1" aria-hidden="true"></div>
+  <div class="cursor-trail-dot" id="trail2" aria-hidden="true"></div>
+  <div class="cursor-trail-dot" id="trail3" aria-hidden="true"></div>
+
+  <!-- Floating Pill Navbar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="#home" class="nav-logo-group" aria-label="Vishal Band Portfolio Home">
+        <div class="nav-logo-badge">
+          <span class="nav-logo-text">VB</span>
+        </div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">Vishal Band</span>
+          <span class="nav-brand-sub">PGDM 2026-28 • WESCHOOL</span>
+        </div>
+      </a>
+
+      <!-- Navigation links -->
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Academic Profile</a></li>
+        <li><a href="#career" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Theme Switch Button -->
+      <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle theme">
+        <svg class="theme-icon icon-moon" viewBox="0 0 24 24">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <svg class="theme-icon icon-sun" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ========================================================================
+       SECTION 1: HERO
+       ======================================================================== -->
+  <main class="hero-section" id="home">
+    <div class="hero-vignette" aria-hidden="true"></div>
+
+    <div class="hero-container">
+      <section class="hero-content">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span>PGDM 2026-28</span>
+        </div>
+
+        <!-- HERO TITLE - ALWAYS VISIBLE -->
+        <h1 class="hero-title">
+          <span class="hero-title-greeting">Hi I'am</span>
+          <span class="hero-title-name">Vishal Band</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          PGDM 2026-28 at WeSchool (Prin. L. N. Welingkar Institute of Management Development and Research) with 2.5+ years of full-time operations experience. Specialized in EHV SCADA Operations, Community Operations at Batchmates, and Agentic AI workflows.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#career" class="btn btn-primary">
+            <span>Explore Experience</span>
+            <svg class="icon-arrow" viewBox="0 0 24 24">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Contact Details</span>
+            <svg class="icon-download" viewBox="0 0 24 24">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://linkedin.com/in/vishalband14" target="_blank" rel="noopener noreferrer" class="hero-contact-badge" title="LinkedIn Profile">
+            <svg class="social-icon" viewBox="0 0 24 24" style="width: 16px; height: 16px;">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            <span>linkedin.com/in/vishalband14</span>
+          </a>
+          <a href="mailto:2pg2026-vishal.band@welingkar.org" class="hero-contact-badge" title="Email Vishal Band">
+            <svg class="social-icon" viewBox="0 0 24 24" style="width: 16px; height: 16px;">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>2pg2026-vishal.band@welingkar.org</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Signature Hanging ID Badge Card -->
+      <div class="hero-badge-column">
+        <div class="badge-pivot-container" id="badgePivot">
+          <div class="lanyard-assembly">
+            <div class="lanyard-cap"></div>
+            <div class="lanyard-strap"></div>
+            <div class="lanyard-clip"></div>
+          </div>
+
+          <div class="badge-card" id="badgeCard">
+            <div class="card-slot-punch"></div>
+            <div class="card-header-band">
+              <div class="card-header-pattern"></div>
+              <div class="card-header-sheen"></div>
+            </div>
+
+            <!-- Profile Photo -->
+            <div class="card-avatar-wrapper">
+              <div class="card-avatar-ring">
+                <img 
+                  class="card-avatar-img" 
+                  src="profile.jpg" 
+                  alt="Vishal Band"
+                  loading="eager"
+                />
+                <span class="card-avatar-online" title="Active"></span>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="card-identity">
+                <h2 class="card-name">Vishal Band</h2>
+                <div class="card-role-chip">PGDM 2026-28 • WeSchool, Mumbai</div>
+                <div class="card-divider-line"></div>
+              </div>
+
+              <div class="card-info-grid">
+                <div class="card-info-cell">
+                  <span class="card-info-label">PROGRAMME</span>
+                  <span class="card-info-val">PGDM 2026-28</span>
+                </div>
+                <div class="card-info-cell">
+                  <span class="card-info-label">LOCATION</span>
+                  <span class="card-info-val">Mumbai, India</span>
+                </div>
+                <div class="card-info-cell">
+                  <span class="card-info-label">EXPERIENCE</span>
+                  <span class="card-info-val">2.5+ Years</span>
+                </div>
+                <div class="card-info-cell">
+                  <span class="card-info-label">FOCUS</span>
+                  <span class="card-info-val status-active-text">
+                    <span class="status-active-dot"></span> Operations &amp; AI
+                  </span>
+                </div>
+              </div>
+
+              <div class="card-barcode-box" id="barcodeBox">
+                <svg class="card-barcode-svg" id="barcodeSvg" preserveAspectRatio="none" viewBox="0 0 240 24"></svg>
+              </div>
+
+              <div class="card-footer">
+                <span class="card-serial">VB-2026-WES</span>
+                <span class="card-brand-tag">MANAGEMENT &amp; OPERATIONS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       SECTION 2: ABOUT & PROFILE SUMMARY (STEP 1, 2, 4, 5, 6, 7)
+       ======================================================================== -->
+  <section class="section-container" id="about">
+    <div class="section-header">
+      <span class="section-tag">Executive Profile</span>
+      <h2 class="section-title">Operations specialist bridging industrial engineering &amp; modern management</h2>
+      <p class="section-desc">
+        Electrical Engineer with 2.5+ years of high-voltage transmission operations experience, currently pursuing PGDM 2026-28 at WeSchool, Mumbai.
+      </p>
+    </div>
+
+    <div class="about-grid">
+      <!-- Bio & High-Impact Metrics -->
+      <div class="bento-card about-bio-card">
+        <div>
+          <p class="about-text">
+            I am <strong>Vishal Band</strong>, currently pursuing <strong>PGDM (2026-28)</strong> at <strong>WeSchool (Prin. L. N. Welingkar Institute of Management Development and Research)</strong>. With an engineering foundation from <strong>Government College of Engineering, Nagpur</strong> and 2.5+ years of full-time industrial operations experience at <strong>Adani Electricity Mumbai Limited</strong>, I combine rigorous analytical problem-solving with operational leadership.
+          </p>
+          <p class="about-text">
+            At <strong>Batchmates</strong>, I lead institutional campus outreach, consumer feedback loops, and operational governance. My core competencies center around <strong>Data-Driven Decision Making, Agentic AI, Advanced Excel, Industrial Automation, and EHV Grid Operations</strong>.
+          </p>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat-item">
+            <span class="stat-number">2.5+</span>
+            <span class="stat-label">Years Full-Time</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">99.98%</span>
+            <span class="stat-label">System Uptime</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">90%</span>
+            <span class="stat-label">Automation Gain</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">220 kV</span>
+            <span class="stat-label">EHV Substation Ops</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Verified Personal Details Card -->
+      <div class="bento-card about-profile-card">
+        <div class="about-photo-frame">
+          <img class="about-photo-img" src="profile.jpg" alt="Vishal Band" />
+        </div>
+        <h3 class="about-profile-name">Vishal Band</h3>
+        <div class="about-profile-role">PGDM 2026-28 • WeSchool, Mumbai</div>
+        
+        <div class="about-quick-details">
+          <div class="about-detail-row">
+            <strong>Location:</strong>
+            <span>Mumbai, India</span>
+          </div>
+          <div class="about-detail-row">
+            <strong>Address:</strong>
+            <span>Flat 122, Floor-12th, Building 8A, Seva Samiti, Mumbai - 400037</span>
+          </div>
+          <div class="about-detail-row">
+            <strong>DOB:</strong>
+            <span>14/02/2000</span>
+          </div>
+          <div class="about-detail-row">
+            <strong>Phone:</strong>
+            <a href="tel:+919545838973" style="color: var(--text-main); font-weight: 600;">+91 9545838973</a>
+          </div>
+          <div class="about-detail-row">
+            <strong>Email:</strong>
+            <a href="mailto:2pg2026-vishal.band@welingkar.org" style="color: var(--accent-purple); font-weight: 600; word-break: break-all;">2pg2026-vishal.band@welingkar.org</a>
+          </div>
+          <div class="about-detail-row">
+            <strong>LinkedIn:</strong>
+            <a href="https://linkedin.com/in/vishalband14" target="_blank" rel="noopener noreferrer" style="color: var(--accent-blue); font-weight: 600;">linkedin.com/in/vishalband14</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Breakdown (Step 4 of PDF) -->
+    <div class="skills-block">
+      <h3 class="skills-block-title">Core Competencies &amp; Technical Skills</h3>
+      <div class="skills-category-group">
+        <div class="skill-cat">
+          <h4>Operations &amp; Power Systems</h4>
+          <div class="skill-tag-wrap">
+            <span class="skill-tag">SCADA Operations</span>
+            <span class="skill-tag">EHV Grid Operations</span>
+            <span class="skill-tag">Load Flow Analysis</span>
+            <span class="skill-tag">220kV Substation Management</span>
+            <span class="skill-tag">Outage &amp; Tripping Governance</span>
+          </div>
+        </div>
+        
+        <div class="skill-cat">
+          <h4>Analytics &amp; Modern Management</h4>
+          <div class="skill-tag-wrap">
+            <span class="skill-tag">Data Driven Decision</span>
+            <span class="skill-tag">Advanced Excel</span>
+            <span class="skill-tag">Agentic AI</span>
+            <span class="skill-tag">Industrial Automation</span>
+            <span class="skill-tag">Root Cause Analysis (RCA)</span>
+          </div>
+        </div>
+
+        <div class="skill-cat">
+          <h4>Platforms &amp; Digital Tools</h4>
+          <div class="skill-tag-wrap">
+            <span class="skill-tag">Microsoft SharePoint</span>
+            <span class="skill-tag">VBA Automation</span>
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">LTSpice &amp; EagleCAD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Details from Step 5, 6, 7 (Certifications, Languages, Hobbies) -->
+    <div class="additional-grid">
+      <div class="add-card">
+        <div class="add-card-title">
+          <span>📜</span> Certifications
+        </div>
+        <div class="add-pill-wrap">
+          <span class="add-pill">Technology Consulting Virtual Internship</span>
+          <span class="add-pill">Branding and Design</span>
+          <span class="add-pill">PCB Design and Fabrication</span>
+        </div>
+      </div>
+
+      <div class="add-card">
+        <div class="add-card-title">
+          <span>🌐</span> Languages
+        </div>
+        <div class="add-pill-wrap">
+          <span class="add-pill">English</span>
+          <span class="add-pill">Hindi</span>
+          <span class="add-pill">Marathi</span>
+        </div>
+      </div>
+
+      <div class="add-card">
+        <div class="add-card-title">
+          <span>🎯</span> Hobbies &amp; Interests
+        </div>
+        <div class="add-pill-wrap">
+          <span class="add-pill">Cooking</span>
+          <span class="add-pill">Non-Fiction Reading</span>
+          <span class="add-pill">AI Content Creator</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 3: ACADEMIC PROFILE (STEP 3 OF PDF)
+       ======================================================================== -->
+  <section class="section-container" id="education">
+    <div class="section-header">
+      <span class="section-tag">Academic Profile</span>
+      <h2 class="section-title">Education &amp; Credentials</h2>
+      <p class="section-desc">
+        Comprehensive academic background spanning management, electrical engineering, and distinguished foundational schooling.
+      </p>
+    </div>
+
+    <div class="education-grid">
+      <!-- 2028: PGDM WeSchool -->
+      <div class="edu-card">
+        <div>
+          <span class="edu-badge-tag">Post Graduate Diploma in Management</span>
+          <h3 class="edu-degree">PGDM (2026-28)</h3>
+          <div class="edu-school">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+            <span>WeSchool, Mumbai</span>
+          </div>
+          <p class="edu-desc">
+            Prin. L. N. Welingkar Institute of Management Development and Research. Specialized management curriculum focusing on executive operations, digital transformation, data-driven decisions, and enterprise leadership.
+          </p>
+        </div>
+        <div class="edu-footer">
+          <span>Batch: 2026 — 2028</span>
+          <span class="edu-score-pill">In Progress</span>
+        </div>
+      </div>
+
+      <!-- 2022: Electrical Engineering Government College of Engineering, Nagpur -->
+      <div class="edu-card">
+        <div>
+          <span class="edu-badge-tag">Bachelor of Engineering</span>
+          <h3 class="edu-degree">Electrical Engineering</h3>
+          <div class="edu-school">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+            <span>Government College of Engineering, Nagpur</span>
+          </div>
+          <p class="edu-desc">
+            Government College of Engineering, Nagpur. Comprehensive study of Power Transmission, Control Systems, Power Electronics, Substation Engineering, and Circuit Analysis.
+          </p>
+        </div>
+        <div class="edu-footer">
+          <span>Graduated: 2022</span>
+          <span class="edu-score-pill">Score: 82.45%</span>
+        </div>
+      </div>
+
+      <!-- 2018: HSC Tip Top College -->
+      <div class="edu-card">
+        <div>
+          <span class="edu-badge-tag">Higher Secondary Certificate</span>
+          <h3 class="edu-degree">HSC (12th STD)</h3>
+          <div class="edu-school">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+            <span>Tip Top College</span>
+          </div>
+          <p class="edu-desc">
+            Science stream with advanced coursework in Physics, Chemistry, and Mathematics (PCM), building rigorous analytical foundations.
+          </p>
+        </div>
+        <div class="edu-footer">
+          <span>Year: 2018</span>
+          <span class="edu-score-pill">Score: 82.00%</span>
+        </div>
+      </div>
+
+      <!-- 2016: SSC Yashoda English High School -->
+      <div class="edu-card">
+        <div>
+          <span class="edu-badge-tag">Secondary School Certificate</span>
+          <h3 class="edu-degree">SSC (10th STD)</h3>
+          <div class="edu-school">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+            <span>Yashoda English High School</span>
+          </div>
+          <p class="edu-desc">
+            Distinguished academic performance demonstrating early excellence across sciences, mathematics, and languages.
+          </p>
+        </div>
+        <div class="edu-footer">
+          <span>Year: 2016</span>
+          <span class="edu-score-pill">Score: 93.00%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 4: WORKING EXPERIENCE (STEP 8 OF PDF)
+       ======================================================================== -->
+  <section class="section-container" id="career">
+    <div class="section-header">
+      <span class="section-tag">Work Experience</span>
+      <h2 class="section-title">Professional Experience (Prior to WeSchool)</h2>
+      <p class="section-desc">
+        Proven track record across full-time community operations leadership and high-stakes transmission network SCADA management.
+      </p>
+    </div>
+
+    <div class="timeline-container">
+      <!-- 8A: Batchmates -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="career-card">
+          <div class="career-header">
+            <div>
+              <h3 class="career-role">Operations &amp; Community Outreach</h3>
+              <div class="career-company">Batchmates • Mumbai, India (Full-time)</div>
+            </div>
+            <span class="career-period">Jan 2026 — Present</span>
+          </div>
+
+          <ul class="career-bullets">
+            <li class="career-bullet-item">
+              Spearheaded institutional outreach across colleges and universities, partnering with student committees and campus leaders to accelerate user onboarding and active platform adoption.
+            </li>
+            <li class="career-bullet-item">
+              Analysed structured consumer feedback and drop-off funnels, identifying core user pain points and translating consumer insights into actionable product and process enhancements.
+            </li>
+            <li class="career-bullet-item">
+              Formulated repeatable operational workflows, escalation mechanisms, and process documentation, establishing scalable governance for inter-collegiate community operations.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 8B: Adani Electricity Mumbai Limited -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="career-card">
+          <div class="career-header">
+            <div>
+              <h3 class="career-role">SCADA Operations &amp; Grid Reliability</h3>
+              <div class="career-company">Adani Electricity Mumbai Limited • Mumbai, India (Full-time)</div>
+            </div>
+            <span class="career-period">July 2022 — Feb 2025</span>
+          </div>
+
+          <ul class="career-bullets">
+            <li class="career-bullet-item">
+              Monitored and controlled extra-high voltage (EHV) SCADA operations across Mumbai's transmission network, resolving 95% of real-time operational abnormalities to maintain 99.98% system uptime.
+            </li>
+            <li class="career-bullet-item">
+              Engineered an automated VBA-based incident reporting framework, eliminating manual dispatch bottlenecks and increasing cross-departmental communication efficiency by 90%.
+            </li>
+            <li class="career-bullet-item">
+              Instituted a centralized Outage and Tripping Management System on Microsoft SharePoint, enforcing standardized operational governance and audit-ready tracking across transmission teams.
+            </li>
+            <li class="career-bullet-item">
+              Diagnosed recurring equipment failure patterns using structured root cause analysis (RCA), partnering with maintenance crews to optimize repair intervals and reduce unplanned downtime by 30%.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Co-Curricular & High-Voltage Operational Milestones (Step 10 of PDF) -->
+    <div class="milestones-block">
+      <h3 class="milestones-title">
+        <span>⚡</span> Co-Curricular &amp; High-Voltage Operational Achievements
+      </h3>
+      <div class="milestone-item">
+        Managed 220kV AEML Versova Substation Load during tripping of three transformers and two transmission lines.
+      </div>
+      <div class="milestone-item">
+        Successfully carried out 220kV Gorai Outage during restoration of Main Bus-2. Also managed load of EHV Substation for two months.
+      </div>
+      <div class="milestone-item">
+        Developed Outage Management System and Tripping Management system using SharePoint to track the data of outage and tripping in transmission network.
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 5: PROJECTS
+       ======================================================================== -->
+  <section class="section-container" id="projects">
+    <div class="section-header">
+      <span class="section-tag">Key Projects</span>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-desc">
+        Key technology solutions, operational portals, and analytical platforms designed for workflow optimization and organizational efficiency.
+      </p>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Project: Intern Task Management & Progress Tracking System -->
+      <div class="project-card">
+        <div class="project-preview preview-task">
+          <div class="project-preview-mockup">
+            <div class="mockup-icon-header">
+              <span>📋 BATCHMATES TASK PORTAL</span>
+              <span class="mockup-badge">SharePoint &amp; Ops</span>
+            </div>
+            <div style="font-size: 12.5px; opacity: 0.9; line-height: 1.4;">
+              Task allocation • Centralized assignments • Structured progress tracking
+            </div>
+          </div>
+        </div>
+        <div class="project-body">
+          <div>
+            <span class="project-category">Operational Systems &amp; Workflow Automation</span>
+            <h3 class="project-title">Intern Task Management &amp; Progress Tracking System</h3>
+            <ul class="project-bullets">
+              <li class="project-bullet">
+                Developed a functional SharePoint-based task management portal for BatchMates to streamline intern task allocation, centralize assignments, and track task progress through a structured SharePoint List, improving workflow visibility, accountability, and coordination.
+              </li>
+            </ul>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">SharePoint Portal</span>
+            <span class="project-tag">SharePoint Lists</span>
+            <span class="project-tag">BatchMates</span>
+            <span class="project-tag">Task Allocation</span>
+            <span class="project-tag">Workflow Governance</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cyberverse -->
+      <div class="project-card">
+        <div class="project-preview preview-cyber">
+          <div class="project-preview-mockup">
+            <div class="mockup-icon-header">
+              <span>🛡️ "CYBERVERSE" SIMULATION</span>
+              <span class="mockup-badge">Security &amp; Gamification</span>
+            </div>
+            <div style="font-size: 12.5px; opacity: 0.9; line-height: 1.4;">
+              Threat vector simulation • Phishing &amp; DNS spoofing • Dynamic prompt mechanisms
+            </div>
+          </div>
+        </div>
+        <div class="project-body">
+          <div>
+            <span class="project-category">Simulation &amp; Awareness Platform</span>
+            <h3 class="project-title">Interactive Cybersecurity Risk Simulation ("CYBERVERSE")</h3>
+            <ul class="project-bullets">
+              <li class="project-bullet">
+                Engineered an interactive training platform simulating threat vectors including phishing, SMS fraud, DNS spoofing, ransomware and social engineering attacks.
+              </li>
+              <li class="project-bullet">
+                Designed contextual decision branches and dynamic prompt mechanisms to gamify threat discovery and accelerate security awareness.
+              </li>
+            </ul>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Cybersecurity</span>
+            <span class="project-tag">Risk Simulation</span>
+            <span class="project-tag">Gamified Learning</span>
+            <span class="project-tag">Threat Discovery</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9B: Automation Suite -->
+      <div class="project-card">
+        <div class="project-preview preview-automation">
+          <div class="project-preview-mockup">
+            <div class="mockup-icon-header">
+              <span>📊 OPERATIONAL AUTOMATION SUITE</span>
+              <span class="mockup-badge">Analytics &amp; Workflows</span>
+            </div>
+            <div style="font-size: 12.5px; opacity: 0.9; line-height: 1.4;">
+              Productivity dashboards • Task priority tracking • Automated SWOT data sorting
+            </div>
+          </div>
+        </div>
+        <div class="project-body">
+          <div>
+            <span class="project-category">Analytics &amp; Workflow Modernization</span>
+            <h3 class="project-title">Operational Automation Suite</h3>
+            <ul class="project-bullets">
+              <li class="project-bullet">
+                Developed productivity dashboards featuring task-priority trackers, habit metrics and an automated SWOT data-sorting engine.
+              </li>
+              <li class="project-bullet">
+                Streamlined manual data-entry processes, accelerating access to real-time performance insights and decision variables.
+              </li>
+            </ul>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Workflow Modernization</span>
+            <span class="project-tag">Automated SWOT</span>
+            <span class="project-tag">Productivity Dashboards</span>
+            <span class="project-tag">Data Optimization</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 6: CONTACT
+       ======================================================================== -->
+  <section class="section-container" id="contact">
+    <div class="section-header">
+      <span class="section-tag">Get in Touch</span>
+      <h2 class="section-title">Contact &amp; Connect</h2>
+      <p class="section-desc">
+        Open for corporate engagements, operational consultations, executive opportunities, and academic collaborations.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Contact details -->
+      <div class="contact-info-card">
+        <div class="contact-item">
+          <div class="contact-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-label">Official Email</div>
+            <a href="mailto:2pg2026-vishal.band@welingkar.org" class="contact-val">2pg2026-vishal.band@welingkar.org</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-label">LinkedIn Profile</div>
+            <a href="https://linkedin.com/in/vishalband14" target="_blank" rel="noopener noreferrer" class="contact-val">linkedin.com/in/vishalband14</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-label">Phone</div>
+            <a href="tel:+919545838973" class="contact-val">+91 9545838973</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon-box">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-label">Location Address</div>
+            <div class="contact-val">Flat 122, Floor-12th, Building 8A, Seva Samiti, Mumbai - 400037, India</div>
+          </div>
+        </div>
+
+        <div style="margin-top: 8px;">
+          <a href="mailto:2pg2026-vishal.band@welingkar.org?subject=Resume%20Inquiry%20-%20Vishal%20Band" class="btn btn-secondary" style="width: 100%;">
+            <svg class="icon-download" viewBox="0 0 24 24">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Request Full Resume (CV)</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Message Form -->
+      <div class="contact-form-card">
+        <form class="contact-form" id="contactForm" onsubmit="event.preventDefault(); handleContactSubmit();">
+          <div class="form-group">
+            <label class="form-label" for="contactName">Your Name</label>
+            <input class="form-input" type="text" id="contactName" placeholder="e.g. Talent Acquisition / Corporate Partner" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contactEmail">Your Email</label>
+            <input class="form-input" type="email" id="contactEmail" placeholder="partner@enterprise.com" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contactSubject">Subject</label>
+            <input class="form-input" type="text" id="contactSubject" placeholder="Corporate Engagement / Project Discussion" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contactMessage">Message</label>
+            <textarea class="form-textarea" id="contactMessage" placeholder="Hello Vishal, we would like to connect regarding..." required></textarea>
+          </div>
+
+          <button type="submit" class="form-submit-btn" id="submitBtn">
+            <span>Send Message</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+          <div class="form-status" id="formStatus">Thank you! Your message has been sent.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-name">Vishal Band</span>
+        <span class="footer-copy">© <span id="currentYear"></span> Vishal Band • PGDM 2026-28 • Mumbai, India.</span>
+      </div>
+
+      <a href="#home" class="back-to-top-btn" aria-label="Back to top">
+        <span>Back to Top</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       JAVASCRIPT LOGIC
+       ========================================================================== -->
+  <script>
+    (function() {
+      'use strict';
+
+      // Current year in footer
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+      /* ------------------------------------------------------------------------
+         1. THEME SWITCHER
+         ------------------------------------------------------------------------ */
+      const themeToggleBtn = document.getElementById('themeToggle');
+      const root = document.documentElement;
+
+      function getInitialTheme() {
+        try {
+          const savedTheme = localStorage.getItem('vb_portfolio_theme');
+          if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme;
+        } catch (e) {}
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function setTheme(theme) {
+        root.setAttribute('data-theme', theme);
+        try {
+          localStorage.setItem('vb_portfolio_theme', theme);
+        } catch (e) {}
+      }
+
+      setTheme(getInitialTheme());
+
+      themeToggleBtn.addEventListener('click', () => {
+        const currentTheme = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+        const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        setTheme(nextTheme);
+      });
+
+      /* ------------------------------------------------------------------------
+         2. SCROLL SPY FOR NAVBAR ACTIVE PILL
+         ------------------------------------------------------------------------ */
+      const navLinks = document.querySelectorAll('.nav-links .nav-link');
+      const sections = document.querySelectorAll('main, section');
+
+      window.addEventListener('scroll', () => {
+        let currentSectionId = 'home';
+        const scrollPosition = window.scrollY + 180;
+
+        sections.forEach(section => {
+          if (section.id && section.offsetTop <= scrollPosition) {
+            currentSectionId = section.id;
+          }
+        });
+
+        navLinks.forEach(link => {
+          const href = link.getAttribute('href').replace('#', '');
+          if (href === currentSectionId) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      }, { passive: true });
+
+      /* ------------------------------------------------------------------------
+         3. CONTACT FORM HANDLER
+         ------------------------------------------------------------------------ */
+      window.handleContactSubmit = function() {
+        const submitBtn = document.getElementById('submitBtn');
+        const formStatus = document.getElementById('formStatus');
+        
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span>Sending Message...</span>';
+
+        setTimeout(() => {
+          submitBtn.innerHTML = '<span>Message Sent!</span>';
+          formStatus.style.display = 'block';
+          document.getElementById('contactForm').reset();
+
+          setTimeout(() => {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = `
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            `;
+          }, 3000);
+        }, 700);
+      };
+
+      /* ------------------------------------------------------------------------
+         4. FIXED-SEED BARCODE GENERATOR
+         ------------------------------------------------------------------------ */
+      function renderBarcode() {
+        const svg = document.getElementById('barcodeSvg');
+        if (!svg) return;
+
+        let seed = 95458;
+        function seededRandom() {
+          seed = (seed * 9301 + 49297) % 233280;
+          return seed / 233280;
+        }
+
+        let x = 4;
+        const totalWidth = 232;
+        let svgContent = '';
+
+        while (x < totalWidth) {
+          const barWidth = Math.floor(seededRandom() * 3) + 1.2;
+          const barHeight = Math.floor(seededRandom() * 6) + 16;
+          const yOffset = (24 - barHeight) / 2;
+          
+          svgContent += `<rect x="${x.toFixed(1)}" y="${yOffset.toFixed(1)}" width="${barWidth.toFixed(1)}" height="${barHeight.toFixed(1)}" fill="var(--card-barcode-bar)" rx="0.5" />`;
+          
+          const gap = Math.floor(seededRandom() * 3) + 1.4;
+          x += barWidth + gap;
+        }
+
+        svg.innerHTML = svgContent;
+      }
+      renderBarcode();
+
+      /* ------------------------------------------------------------------------
+         5. CUSTOM CURSOR & SMOOTH TRAIL
+         ------------------------------------------------------------------------ */
+      const cursor = document.getElementById('customCursor');
+      const cursorPointer = document.getElementById('cursorPointer');
+      const trails = [
+        { el: document.getElementById('trail1'), x: 0, y: 0, lerp: 0.12 },
+        { el: document.getElementById('trail2'), x: 0, y: 0, lerp: 0.08 },
+        { el: document.getElementById('trail3'), x: 0, y: 0, lerp: 0.04 }
+      ];
+
+      let mouseX = window.innerWidth / 2;
+      let mouseY = window.innerHeight / 2;
+      let cursorX = mouseX;
+      let cursorY = mouseY;
+      let prevCursorX = cursorX;
+      let prevCursorY = cursorY;
+      let cursorAngle = 0;
+      let hasMouseMoved = false;
+
+      window.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        if (!hasMouseMoved) {
+          cursorX = mouseX;
+          cursorY = mouseY;
+          trails.forEach(t => { t.x = mouseX; t.y = mouseY; });
+          hasMouseMoved = true;
+        }
+      });
+
+      const badgePivot = document.getElementById('badgePivot');
+      badgePivot.addEventListener('mouseenter', () => { cursor.classList.add('is-card-hover'); });
+      badgePivot.addEventListener('mouseleave', () => { cursor.classList.remove('is-card-hover'); });
+
+      function animateCursor() {
+        if (hasMouseMoved) {
+          cursorX += (mouseX - cursorX) * 0.22;
+          cursorY += (mouseY - cursorY) * 0.22;
+
+          const deltaX = cursorX - prevCursorX;
+          const deltaY = cursorY - prevCursorY;
+          const speed = Math.hypot(deltaX, deltaY);
+
+          if (speed > 0.5) {
+            const targetAngle = (Math.atan2(deltaY, deltaX) * 180 / Math.PI) - 45;
+            let diff = (targetAngle - cursorAngle) % 360;
+            if (diff < -180) diff += 360;
+            if (diff > 180) diff -= 360;
+            cursorAngle += diff * 0.2;
+          }
+
+          prevCursorX = cursorX;
+          prevCursorY = cursorY;
+
+          cursor.style.transform = `translate3d(${cursorX - 12}px, ${cursorY - 12}px, 0)`;
+          cursorPointer.style.transform = `rotate(${cursorAngle}deg)`;
+
+          trails.forEach(trail => {
+            trail.x += (cursorX - trail.x) * trail.lerp;
+            trail.y += (cursorY - trail.y) * trail.lerp;
+            trail.el.style.transform = `translate3d(${trail.x - 2.5}px, ${trail.y - 2.5}px, 0)`;
+          });
+        }
+
+        requestAnimationFrame(animateCursor);
+      }
+      requestAnimationFrame(animateCursor);
+
+      /* ------------------------------------------------------------------------
+         6. BADGE PENDULUM PHYSICS & DRAGGING
+         ------------------------------------------------------------------------ */
+      const badgeCard = document.getElementById('badgeCard');
+
+      let angle = 0;
+      let angularVelocity = 0;
+      const stiffness = 0.04;
+      const damping = 0.92;
+
+      let isDragging = false;
+      let idleTime = 0;
+      let pivotCenterX = 0;
+      let pivotTopY = 0;
+
+      function updatePivotCoordinates() {
+        if (!badgePivot) return;
+        const rect = badgePivot.getBoundingClientRect();
+        pivotCenterX = rect.left + rect.width / 2;
+        pivotTopY = rect.top;
+      }
+
+      window.addEventListener('resize', updatePivotCoordinates);
+      setTimeout(updatePivotCoordinates, 500);
+
+      function onPointerDown(e) {
+        isDragging = true;
+        badgePivot.classList.add('dragging');
+        updatePivotCoordinates();
+
+        angularVelocity = 0;
+
+        window.addEventListener('mousemove', onPointerMove);
+        window.addEventListener('touchmove', onPointerMove, { passive: false });
+        window.addEventListener('mouseup', onPointerUp);
+        window.addEventListener('touchend', onPointerUp);
+      }
+
+      function onPointerMove(e) {
+        if (!isDragging) return;
+        if (e.cancelable) e.preventDefault();
+
+        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+        const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+
+        const dx = clientX - pivotCenterX;
+        const dy = clientY - pivotTopY;
+
+        let targetAngle = Math.atan2(dx, Math.max(dy, 40)) * (180 / Math.PI);
+        targetAngle = Math.max(-45, Math.min(45, targetAngle));
+
+        angularVelocity = (targetAngle - angle) * 0.45;
+        angle = targetAngle;
+      }
+
+      function onPointerUp() {
+        if (!isDragging) return;
+        isDragging = false;
+        badgePivot.classList.remove('dragging');
+
+        window.removeEventListener('mousemove', onPointerMove);
+        window.removeEventListener('touchmove', onPointerMove);
+        window.removeEventListener('mouseup', onPointerUp);
+        window.removeEventListener('touchend', onPointerUp);
+      }
+
+      badgePivot.addEventListener('mousedown', onPointerDown);
+      badgePivot.addEventListener('touchstart', onPointerDown, { passive: true });
+
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      function updatePhysics() {
+        if (!prefersReducedMotion) {
+          if (isDragging) {
+            const tiltY = Math.max(-15, Math.min(15, angle * 0.4));
+            badgePivot.style.transform = `translateX(-50%) rotate(${angle.toFixed(2)}deg)`;
+            badgeCard.style.transform = `perspective(1000px) rotateY(${tiltY.toFixed(2)}deg)`;
+          } else {
+            const springForce = -stiffness * angle;
+            angularVelocity += springForce;
+            angularVelocity *= damping;
+            angle += angularVelocity;
+
+            idleTime += 0.022;
+            const idleSway = Math.sin(idleTime) * 0.9;
+            const finalAngle = angle + (Math.abs(angle) < 0.2 ? idleSway : 0);
+
+            badgePivot.style.transform = `translateX(-50%) rotate(${finalAngle.toFixed(2)}deg)`;
+            badgeCard.style.transform = `perspective(1000px) rotateY(0deg)`;
+          }
+        }
+
+        requestAnimationFrame(updatePhysics);
+      }
+      requestAnimationFrame(updatePhysics);
+
+    })();
+  </script>
+</body>
+</html>
